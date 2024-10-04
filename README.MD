@@ -34,9 +34,12 @@ cd study-session-timer
 ```
 
 ## Example Code Flow
+
+```bash
 ╔═════════════════════════════╗
 ║ Study Session Timer         ║
 ╚═════════════════════════════╝
+```
 
 What subject are you studying? Math
 How many minutes do you plan to study? 25
