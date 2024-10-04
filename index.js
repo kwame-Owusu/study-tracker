@@ -104,7 +104,6 @@ function startTimer(duration) {
     if (timer < 0) {
       clearInterval(countdown);
       spinner.succeed(); // Stop the spinner with success message
-      playSound();
       displayLogo("end");
       askToContinue();
     }
