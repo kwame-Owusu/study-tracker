@@ -2,6 +2,9 @@ import readlineSync from 'readline-sync';
 import chalk from 'chalk';
 import fs  from  'fs';
 import ora from 'ora';
+import play from 'play-sound';
+
+const player = play();
 
 
 function saveData(subject, sessionLength) {
@@ -53,25 +56,24 @@ function saveData(subject, sessionLength) {
 }
 
 
-
 function displayLogo(type) {
 
   const logo = chalk.bold(`
-  ╔═════════════════════════════╗
-  ║    Study Session Timer      ║
-  ╚═════════════════════════════╝
+        ╔═════════════════════════════╗
+        ║    Study Session Timer      ║
+        ╚═════════════════════════════╝
 `);
 
   const end = chalk.bold(`
-  ╔═════════════════════════════╗
-  ║      Session Complete!      ║ 
-  ╚═════════════════════════════╝
+        ╔═════════════════════════════╗
+        ║      Session Complete!      ║ 
+        ╚═════════════════════════════╝
 `);
 
   const goodbye = chalk.bold(`
-  ╔═════════════════════════════╗
-  ║ Thank you for studying 👋   ║ 
-  ╚═════════════════════════════╝
+        ╔═════════════════════════════╗
+        ║ Thank you for studying 👋   ║ 
+        ╚═════════════════════════════╝
 `);
 
   // Log based on the type
@@ -101,10 +103,11 @@ function startTimer(duration) {
     const seconds = timer % 60;
     const display = `${minutes < 10 ? '0' + minutes : minutes}:${seconds < 10 ? '0' + seconds : seconds}`;
     
-    spinner.text = `Time left: ${display}`; // Update spinner text
+    spinner.text = `Time left: ${display}`;
     if (timer < 0) {
       clearInterval(countdown);
       spinner.succeed(); // Stop the spinner with success message
+      playSound();
       displayLogo("end");
       askToContinue();
     }
