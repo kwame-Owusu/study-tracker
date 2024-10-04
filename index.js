@@ -2,9 +2,6 @@ import readlineSync from 'readline-sync';
 import chalk from 'chalk';
 import fs  from  'fs';
 import ora from 'ora';
-import play from 'play-sound';
-
-const player = play();
 
 
 function saveData(subject, sessionLength) {
