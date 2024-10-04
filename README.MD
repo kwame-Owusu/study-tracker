@@ -39,9 +39,12 @@ cd study-session-timer
 ╔═════════════════════════════╗
 ║ Study Session Timer         ║
 ╚═════════════════════════════╝
-```
 
 What subject are you studying? Math
 How many minutes do you plan to study? 25
 You will study Math for 25 minutes.
 Time left: 25:59
+
+```
+
+
