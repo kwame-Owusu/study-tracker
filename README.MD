@@ -16,7 +16,7 @@ You need to have Node.js and npm installed on your machine.
 
 1. Clone the repository:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/kwame-Owusu/study-tracker.git
    ```
 2. Navigate to project Directory:
 
