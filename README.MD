@@ -7,8 +7,9 @@ using ![clack](https://www.npmjs.com/package/@clack/prompts?activeTab=readme) an
 
 - art greeting on the console.
 - Get user input for study subject and time.
+- data is saved to a JSON file, by subject matter.
 - Countdown timer displayed on the console.
-- After the session ends, data is saved to a JSON file.
+
 
 ## Prerequisites
 You need to have NodeJS and npm installed on your machine.
