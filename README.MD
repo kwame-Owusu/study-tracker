@@ -1,6 +1,7 @@
 # Study Session CLI Timer
 
 A simple CLI application that helps you track your study sessions by setting a countdown timer and saving the session details in a JSON file.
+using ![clack](https://www.npmjs.com/package/@clack/prompts?activeTab=readme) and NodeJS.
 
 ## Features
 
@@ -10,7 +11,7 @@ A simple CLI application that helps you track your study sessions by setting a c
 - After the session ends, data is saved to a JSON file.
 
 ## Prerequisites
-You need to have Node.js and npm installed on your machine.
+You need to have NodeJS and npm installed on your machine.
 
 ## Installation
 
@@ -37,9 +38,11 @@ cd study-session-timer
 ║    Study Session Timer      ║
 ╚═════════════════════════════╝
 
-What subject are you studying? Math
-How many minutes do you plan to study? 25
-You will study Math for 25 minutes.
+What subject are you studying? > Maths
+How many minutes do you plan to study? > 25
+
+You will study Maths for 25 minutes.
+Starting the timer now...
 Time left: 25:59
 
 ```
