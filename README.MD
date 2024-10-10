@@ -1,7 +1,7 @@
 # Study Session CLI Timer
 
 A simple CLI application that helps you track your study sessions by setting a countdown timer and saving the session details in a JSON file.
-using ![clack](https://www.npmjs.com/package/@clack/prompts?activeTab=readme) and NodeJS.
+using [clack](https://www.npmjs.com/package/@clack/prompts?activeTab=readme) and NodeJS.
 
 ## Features
 
