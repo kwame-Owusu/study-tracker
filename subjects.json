@@ -2,5 +2,9 @@
   {
     "value": "physics",
     "label": "physics"
+  },
+  {
+    "value": "cs2011",
+    "label": "cs2011"
   }
 ]

@@ -49,7 +49,7 @@ function displayLogo(type) {
 }
 
 function saveData(subject, sessionLength) {
-  const capitalizeSubject = subject.charAt(0).toUpperCase() + subject.slice(1).toLowerCase();
+  const capitalizeSubject = subject.toUpperCase();
   const dataRecord = {
     "session length": `${sessionLength} mins`,
     "date": new Date().toDateString(),
