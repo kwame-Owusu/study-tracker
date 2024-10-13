@@ -1,14 +1,17 @@
 {
-  "CS2011": [
-    {
-      "session length": "1 mins",
-      "date": "Thu Oct 10 2024",
-      "time": "11:55:30"
-    },
-    {
-      "session length": "1 mins",
-      "date": "Thu Oct 10 2024",
-      "time": "19:52:07"
-    }
-  ]
+  "SOFT20181": {
+    "sessions_completed": 2,
+    "sessions": [
+      {
+        "sessionLength": "1 mins",
+        "date": "Sun Oct 13 2024",
+        "time": "21:21:31"
+      },
+      {
+        "sessionLength": "1 mins",
+        "date": "Sun Oct 13 2024",
+        "time": "21:21:43"
+      }
+    ]
+  }
 }

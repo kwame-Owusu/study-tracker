@@ -47,11 +47,12 @@ function displayLogo(type) {
 
   console.log(type === 'start' ? logo : end);
 }
-
 function saveData(subject, sessionLength) {
   const capitalizeSubject = subject.toUpperCase();
-  const dataRecord = {
-    "session length": `${sessionLength} mins`,
+  
+
+  const newSession = {
+    "sessionLength": `${sessionLength} mins`,
     "date": new Date().toDateString(),
     "time": new Date().toLocaleTimeString()
   };
@@ -63,20 +64,27 @@ function saveData(subject, sessionLength) {
   fs.readFile(outputPath, 'utf8', (err, data) => {
     if (!err) {
       try {
-        records = JSON.parse(data);
+        records = JSON.parse(data); // Parse existing records
       } catch (parseErr) {
         console.log("Error parsing JSON data:", parseErr);
       }
     } else if (err.code !== 'ENOENT') {
       console.log("An error occurred while reading the file:", err);
-      return;
+      return; // Exit if an error other than file not found occurs
     }
 
-    // Add the new record under the appropriate subject
+    // Check if the subject already exists in records
     if (!records[capitalizeSubject]) {
-      records[capitalizeSubject] = [];
+      // Initialize subject if it doesn't exist
+      records[capitalizeSubject] = {
+        "sessions_completed": 0, 
+        "sessions": [] 
+      };
     }
-    records[capitalizeSubject].push(dataRecord);
+
+    // Add the new session to the sessions array
+    records[capitalizeSubject].sessions.push(newSession);1
+    records[capitalizeSubject].sessions_completed += 1;
 
     // Convert the updated records object back to JSON
     const jsonContent = JSON.stringify(records, null, 2);
