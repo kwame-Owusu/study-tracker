@@ -3,10 +3,10 @@ import ora from 'ora';
 import fs from 'fs';
 import path from 'path';
 
-// Path to the subjects file
+
 const SUBJECTS_FILE = path.resolve('./subjects.json');
 
-// Load subjects from file
+
 function loadSubjects() {
   try {
     if (fs.existsSync(SUBJECTS_FILE)) {
@@ -21,7 +21,7 @@ function loadSubjects() {
   }
 }
 
-// Save subjects to file
+
 function saveSubjects(subjects) {
   try {
     const jsonContent = JSON.stringify(subjects, null, 2);
