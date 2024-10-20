@@ -2,6 +2,7 @@ import * as clack from '@clack/prompts';
 import ora from 'ora';
 import fs from 'fs';
 import path from 'path';
+import beepbeep from 'beepbeep';
 
 
 const SUBJECTS_FILE = path.resolve('./subjects.json');
@@ -120,7 +121,7 @@ function startTimer(duration) {
     if (timer < 0) {
       clearInterval(countdown);
       spinner.succeed(displayLogo("end"));
-      // Ask if the user wants to continue after the timer ends
+      beepbeep();
       askToContinue().then((shouldContinue) => {
         if (shouldContinue) {
           console.clear();

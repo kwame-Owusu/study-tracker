@@ -1,10 +1,38 @@
 [
   {
-    "value": "physics",
-    "label": "physics"
+    "value": "SOFT20111",
+    "label": "SOFT2011",
+    "hint": "Software Enginering"
   },
+
   {
     "value": "SOFT20181",
-    "label": "SOFT20181"
+    "label": "SOFT20181",
+    "hint": "Internet Application Programming"
+  },
+
+  {
+    "value": "SOFT20101",
+    "label": "SOFT20101",
+    "hint": "Database Engineering"
+  },
+
+  {
+    "value": "SOFT20091",
+    "label": "SOFT200091",
+    "hint": "Software Design & Imp"
+  },
+
+  {
+    "value": "COMP20081",
+    "label": "COMP20081",
+    "hint": "System Software"
+  },
+
+  {
+    "value": "ISYS20182",
+    "label": "ISYS20182",
+    "hint": "Practical Project Management & Prof Dev"
   }
+
 ]
