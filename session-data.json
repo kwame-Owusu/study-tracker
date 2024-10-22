@@ -20,12 +20,17 @@
     ]
   },
   "SOFT20111": {
-    "sessions_completed": 1,
+    "sessions_completed": 2,
     "sessions": [
       {
         "sessionLength": "1 mins",
         "date": "Sun Oct 20 2024",
         "time": "9:02:38 PM"
+      },
+      {
+        "sessionLength": "1 mins",
+        "date": "Tue Oct 22 2024",
+        "time": "1:48:00 PM"
       }
     ]
   }
